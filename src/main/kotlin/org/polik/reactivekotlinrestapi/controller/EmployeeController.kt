@@ -2,13 +2,11 @@ package org.polik.reactivekotlinrestapi.controller
 
 import org.polik.reactivekotlinrestapi.model.Employee
 import org.polik.reactivekotlinrestapi.service.EmployeeService
-import org.springframework.validation.annotation.Validated
 import org.springframework.web.bind.annotation.*
 import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
 import javax.validation.Valid
 
-@Validated
 @RestController
 @RequestMapping("/api/employees")
 class EmployeeController(private val service: EmployeeService) {

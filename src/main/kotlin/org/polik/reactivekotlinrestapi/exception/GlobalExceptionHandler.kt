@@ -14,7 +14,6 @@ import javax.validation.ValidationException
 
 @ControllerAdvice
 class GlobalExceptionHandler {
-
     @ExceptionHandler(
         value = [
             NotFoundException::class,
@@ -49,6 +48,5 @@ class GlobalExceptionHandler {
     companion object {
         const val VALIDATION_MESSAGE = "Validation Failed"
         const val NOT_FOUND_MESSAGE = "Student not found"
-//        const val INTERNAL_ERROR_MESSAGE = "Internal error"
     }
 }
