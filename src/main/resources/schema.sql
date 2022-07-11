@@ -1,0 +1,6 @@
+CREATE TABLE employees (
+    id IDENTITY PRIMARY KEY,
+    name VARCHAR(40) NOT NULL,
+    email VARCHAR(96) NOT NULL UNIQUE,
+    salary DECIMAL NOT NULL
+);
